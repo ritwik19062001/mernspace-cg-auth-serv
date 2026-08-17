@@ -1,7 +1,7 @@
 // console.log('Server is running on port 3000');
 
 function welcome(name: string) {
-  console.log('Welcome to the server, ' + name + '!');
+  console.log("Welcome to the server, " + name + "!");
 }
 
-welcome('Ritwik');
+welcome("Ritwik");
