@@ -1,26 +1,33 @@
 {
-  "name": "mernspace-c-admin-ui-main",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "dev": "node src/server.js",
-    "format:fix": "prettier . --write",
-    "format:check": "prettier . --check",
-    "lint:check": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky"
-  },
-  "author": "Ritwik B <ritwik.b2001@gmail.com>",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "@eslint/js": "^9.39.5",
-    "@types/node": "^26.2.0",
-    "eslint": "^9.39.5",
-    "husky": "^9.1.7",
-    "prettier": "3.9.6",
-    "typescript": "^5.9.3",
-    "typescript-eslint": "^8.67.0"
-  }
+    "name": "mernspace-c-admin-ui-main",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "dev": "node src/server.js",
+        "format:fix": "prettier . --write",
+        "format:check": "prettier . --check",
+        "lint:check": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "prepare": "husky"
+    },
+    "author": "Ritwik B <ritwik.b2001@gmail.com>",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "@eslint/js": "^9.39.5",
+        "@types/node": "^26.2.0",
+        "eslint": "^9.39.5",
+        "husky": "^9.1.7",
+        "lint-staged": "^16.4.0",
+        "prettier": "3.9.6",
+        "typescript": "^5.9.3",
+        "typescript-eslint": "^8.67.0"
+    },
+    "lint-staged": {
+        "*.ts": [
+            "npm run format:fix",
+            "npm run lint:fix"
+        ]
+    }
 }
