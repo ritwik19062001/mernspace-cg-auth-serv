@@ -1,7 +1,3 @@
-// console.log('Server is running on port 3000');
+import { Config } from './config'
 
-function welcome(name: string) {
-    console.log('Welcome to the server, ' + name + '!')
-}
-
-welcome('Ritwik')
+console.log('Server is running on port ', Config.PORT)
