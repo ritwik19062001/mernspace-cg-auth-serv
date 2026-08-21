@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "main": "index.js",
     "scripts": {
-        "dev": "node src/server.ts",
+        "dev": "nodemon src/server.ts",
         "format:fix": "prettier . --write",
         "format:check": "prettier . --check",
         "lint:check": "eslint .",
@@ -16,11 +16,14 @@
     "description": "",
     "devDependencies": {
         "@eslint/js": "^9.39.5",
+        "@types/express": "^5.0.6",
         "@types/node": "^26.2.0",
         "eslint": "^9.39.5",
         "husky": "^9.1.7",
         "lint-staged": "^16.4.0",
+        "nodemon": "^3.1.14",
         "prettier": "3.9.6",
+        "ts-node": "^10.9.2",
         "typescript": "^5.9.3",
         "typescript-eslint": "^8.67.0"
     },
@@ -31,6 +34,7 @@
         ]
     },
     "dependencies": {
-        "dotenv": "^17.4.2"
+        "dotenv": "^17.4.2",
+        "express": "^5.2.1"
     }
 }
